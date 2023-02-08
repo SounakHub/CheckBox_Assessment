@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://phpcoder.tech/multiselect/css/jquery.multiselect.css">
+    <style>
+        ul{
+            list-style: none;
+        }
+        .ms-options-wrap > .ms-options > ul label{
+            padding: 0 4px;
+            margin: 5px 0 !important;
+        }
+    </style>
+</head>
+
+<body class="bg-dark py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 offset-md-4">
+                <form class="w-100 demo-example">
+                    <select id="options_select" class="form-control" name="country" multiple>
+                        <option value="Australia">Australia</option>
+                        <option value="Bermuda">Bermuda</option>
+                        <option value="Canada">Canada</option>
+                        <option value="Cameroon">Cameroon</option>
+                        <option value="Denmark">Denmark</option>
+                        <option value="France">France</option>
+                        <option value="Finland">Finland</option>
+                        <option value="India">India</option>
+                        <option value="Italy">Italy</option>
+                        <option value="America">America</option>
+                    </select>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://phpcoder.tech/multiselect/js/jquery.multiselect.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        jQuery('#options_select').multiselect({
+            columns: 1,
+            placeholder: 'Select Country',
+            search: true
+        });
+    </script>
+</body>
+
+</html>
